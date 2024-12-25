@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // เตรียมคำสั่ง SQL เพื่อป้องกัน SQL Injection
-        $stmt = $conn->prepare("INSERT INTO customers (customer_id, first_name, last_name, email, phone_number, password, created_at) VALUES (1, ?, ?, ?, ?, ?, NOW())");
+        $stmt = $conn->prepare("INSERT INTO customers (first_name, last_name, email, phone_number, password, created_at) VALUES ( ?, ?, ?, ?, ?, NOW())");
         $stmt->bind_param("sssss", $first_name, $last_name, $email, $phone_number, $hashed_password);
 
         // บันทึกข้อมูล
@@ -55,7 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #F5EFE7;
+            /* สีครีมอ่อน */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -75,13 +76,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .register-form h2 {
             margin-bottom: 20px;
             text-align: center;
+            color: #213555;
+            /* สีฟ้ามืด */
         }
 
         .register-form input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #D8C4B6;
+            /* สีเบจอ่อน */
             border-radius: 5px;
             box-sizing: border-box;
         }
@@ -89,7 +93,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .register-form button {
             width: 100%;
             padding: 10px;
-            background: #28a745;
+            background: #3E5879;
+            /* สีฟ้ากลาง */
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -98,7 +103,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .register-form button:hover {
-            background: #218838;
+            background: #213555;
+            /* สีฟ้ามืดเมื่อ hover */
         }
 
         .error {
@@ -125,6 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
     </style>
+
 </head>
 
 <body>

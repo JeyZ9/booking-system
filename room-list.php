@@ -38,7 +38,8 @@ $conn->close();
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #F5EFE7;
+            /* สีครีมอ่อน */
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -56,7 +57,8 @@ $conn->close();
         }
 
         .btn-book {
-            background-color: #28a745;
+            background-color: #3E5879;
+            /* สีฟ้ากลาง */
             color: #fff;
             padding: 10px;
             border: none;
@@ -66,7 +68,8 @@ $conn->close();
         }
 
         .btn-book:hover {
-            background-color: #218838;
+            background-color: #213555;
+            /* สีฟ้ามืด */
         }
 
         /* Modal Styles */
@@ -102,6 +105,8 @@ $conn->close();
 
         .modal-header h2 {
             margin: 0;
+            color: #213555;
+            /* สีฟ้ามืด */
         }
 
         .close-btn {
@@ -121,13 +126,15 @@ $conn->close();
             width: 100%;
             padding: 10px;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #D8C4B6;
+            /* สีเบจอ่อน */
         }
 
         button[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #007bff;
+            background-color: #3E5879;
+            /* สีฟ้ากลาง */
             color: white;
             border: none;
             border-radius: 5px;
@@ -135,9 +142,11 @@ $conn->close();
         }
 
         button[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #213555;
+            /* สีฟ้ามืด */
         }
     </style>
+
 </head>
 
 <body>

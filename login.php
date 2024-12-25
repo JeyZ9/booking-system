@@ -54,7 +54,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #F5EFE7;
+            /* สีครีมอ่อน */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -63,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .login-form {
-            background: #fff;
+            background: #ffffff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -74,13 +75,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .login-form h2 {
             margin-bottom: 20px;
             text-align: center;
+            color: #213555;
+            /* สีฟ้ามืด */
         }
 
         .login-form input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #D8C4B6;
+            /* สีเบจอ่อน */
             border-radius: 5px;
             box-sizing: border-box;
         }
@@ -88,7 +92,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .login-form button {
             width: 100%;
             padding: 10px;
-            background: #007bff;
+            background: #3E5879;
+            /* สีฟ้ากลาง */
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -97,7 +102,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .login-form button:hover {
-            background: #0056b3;
+            background: #213555;
+            /* สีฟ้ามืดเมื่อ hover */
         }
 
         .error {
@@ -124,6 +130,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
     </style>
+
+
+
 </head>
 
 <body>
