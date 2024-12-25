@@ -123,6 +123,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 font-size: 14px;
             }
         }
+
+        .regis {
+            text-align: center;
+        }
+
+        .container-regis {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
     </style>
 </head>
 
@@ -135,6 +145,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="email" name="email" placeholder="อีเมล" required>
         <input type="password" name="password" placeholder="รหัสผ่าน" required>
         <button type="submit">เข้าสู่ระบบ</button>
+        <div class="container-regis">
+            <a class="regis" href=" ./register.php">ลงชื่อเข้าใช้</a>
+        </div>
     </form>
 </body>
 
